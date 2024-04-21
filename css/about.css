@@ -9,15 +9,14 @@
 	font-family: 'sriracha',cursive;
 	color: #ec6f8a;
 	;
-	font-size: 1.8em;
-	margin-bottom: 10px;
+	font-size: 1.3em;
 }
 .our-team__img
 {
 	width: 180px;
 	height: 180px;
 	object-fit: cover;
-	border-radius: 50%;
+	border-radius: 10px;
 	margin: auto;
 }
 .our-team__txt{
