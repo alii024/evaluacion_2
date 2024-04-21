@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&display=swap');
+@font-face {
+	font-family: 'sriracha';
+	src: url(./font/Sriracha/Sriracha-Regular.ttf);
+}
+@font-face {
+	font-family:'korean';
+	src: url(./font/Noto_Serif_KR/NotoSerifKR-Regular.otf);
+}
 *{
     box-sizing: border-box;
 }
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'sriracha';
     margin: 0;
 }
 /*----------------Estilos Base------------------*/
@@ -37,20 +45,20 @@ h1,h2,h3,h4,h5{
 }
 .logo{
     font-size: 1.9em;
-    color: #de423a;
+    color: #ec6f8a;
     padding: 10px;
-    font-family: 'Sacramento', cursive;
+    font-family: cursive;
         
 }
 .main-header__contactInfo__phone{
-    background:#de423a;
+    background:#ec6f8a;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     margin: 0;
 }
 
 .main-header__contactInfo__addres{
-    padding: 10px;
+    padding: 5px;
     margin: 0px;
 }
 .main-header [class*="icon-"]:before{
@@ -124,17 +132,17 @@ h1,h2,h3,h4,h5{
 
 .menu__link{
     display: block;
-    padding: 15px;
+    padding: 11px;
     color: white;
     text-align: center;
     text-decoration: none;
     
 }
 .menu__link:hover{
-     background-color: #DE423A;
+     background-color: #ec6f8a;
 }
 .menu__link--select{
-    background-color: #DE423A;
+    background-color: #ec6f8a;
     
 }
 .mostrar{
@@ -151,7 +159,7 @@ h1,h2,h3,h4,h5{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.437);
     z-index: 1000;
     top: 0;
 }
@@ -162,7 +170,7 @@ h1,h2,h3,h4,h5{
 }
 .banner__content {
     width: 70%;
-    color: white;
+    color: rgba(0, 0, 0, 0.91);
     text-align:center;
     position: absolute;
     z-index: 1500;
@@ -176,7 +184,7 @@ h1,h2,h3,h4,h5{
 
 /*----------------Estilos Principales------------------*/
 .group--color .container{
-	background-color: #DE423A;
+	background-color: #ec6f8a;
 	padding: 10px;
 	text-align: center;
 	
@@ -184,8 +192,19 @@ h1,h2,h3,h4,h5{
 .main__title{
 	margin: 15px 0;
 	font-size: 2.8em;
-	font-family: 'Sacramento',cursive;
+	font-family: 'sriracha',cursive;
 	
+}
+.main__recomendaciones{
+	font-size:30px;
+	font-family: 'sriracha';
+	color: #ec6f8a;
+	padding-left: 10px;
+}
+.main__korean{
+	margin: 15px 0;
+	font-size: 2.8em;
+	font-family: 'korean';
 }
 .column__title{
 	font-size: 1.3em;
@@ -199,14 +218,14 @@ h1,h2,h3,h4,h5{
 	text-align: center;
 	text-decoration: none;
 	width: 120px;
-	background: #DE423A;
+	background: #ec6f8a;
 	color: #fff;
 	padding:10px;
 	margin: 10px auto;
 	
 }
 .group__title{
-	font-family:'Sacramento',cursive;
+	font-family:'sriracha',cursive;
 	text-align: center;
 	font-weight: bold;
 	font-size: 1.8em;
@@ -223,15 +242,16 @@ h1,h2,h3,h4,h5{
 	max-width: 350px;
 }
 
-.today-special__tittle{
+.actores-destacados__tittle{
 	
-	font-size: 1.3em;
+	font-size: 1.7em;
 	padding-top: 10px;
 	padding-bottom: 20px;
+	color: #ec6f8a;
 }
-.today-special__price{
-	font-size: 1.5em;
-	color: #DE423a;
+.actores-destacados__descripcion{
+	font-size: 1em;
+	color: #222;
 	font-weight: bold;
 }
 
@@ -262,6 +282,10 @@ h1,h2,h3,h4,h5{
 	top: 3px;
 	right: 5px;
 }
+.whatsapp{
+	width: 5%;
+	
+}
 
 /*----------------Estilos Responsivos------------------*/
 
@@ -284,7 +308,7 @@ h1,h2,h3,h4,h5{
 		color: #fff;
 	}
 	.main_nav{
-		background:rgba(0,0,0,0.85);
+		background:rgba(0, 0, 0, 0.85);
 	}
 	.banner__content{
 		font-size:1.5em;
@@ -308,7 +332,8 @@ h1,h2,h3,h4,h5{
 		margin: 0;
 	}
 	.today-special .column {
-		border: 5px solid #ddd;
+		border: 5px solid #ec6f8a;
+		background-color: #ec6f8a56;
 		padding: 5px;
 	}
 	.today-special__img{
@@ -395,6 +420,11 @@ h1,h2,h3,h4,h5{
 	.today-special__price{
 	font-size: 2.2em;
 	
+	}
+	.main__recomendaciones{
+		margin: auto;
+		width: fit-content;
+
 	}
 }
 
